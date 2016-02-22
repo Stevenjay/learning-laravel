@@ -11,6 +11,12 @@ class PagesController extends Controller
 {
    public function about()
    {
-   		return view('pages.about');
+
+   		//Compact takes the keys given and looks for variables with the same name and builds up an associative array
+
+   		$first = "Steven";
+   		$last = "Jasionowicz";
+
+   		return view('pages.about', compact('first', 'last'));
    }
 }
