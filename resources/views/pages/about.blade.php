@@ -16,4 +16,14 @@
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+
+	@if (count($cars))
+	<h1>My Favourite F1 Teams</h1>
+	<ul>
+		@foreach ($cars as $car)
+			<li>{{ $car }}</li>
+		@endforeach	
+	</ul>
+	@endif
+
 @endsection
